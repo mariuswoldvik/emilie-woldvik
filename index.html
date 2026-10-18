@@ -4,7 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Emilie Woldvik, norsk fotballspiller. Høyreback for ACF Fiorentina og Norge.">
-<style>body{margin:0}img{max-width:100%}</style>
+<style>body{margin:0}img{max-width:100%}
+/* Section bands: each chapter of the page sits on its own tone */
+.s-om{background:var(--tone-om)}
+.s-karriere{background:var(--tone-karriere)}
+.s-drakter{background:var(--tone-drakter)}
+.s-meritter{background:var(--tone-meritter);--ink:var(--on-deep);--muted:var(--on-deep-muted);--line:var(--deep-line);--red:var(--deep-red);color:var(--ink)}
+.s-meritter .honours{border-top-color:var(--ink)}
+.s-drakter .chapter,.s-drakter .intl div{background:var(--paper)}
+.s-karriere .band{padding-top:clamp(8px,2vw,16px)}
+footer{background:var(--tone-meritter);--ink:var(--on-deep);--muted:var(--on-deep-muted);--line:var(--deep-line);color:var(--ink);border-top:1px solid var(--deep-line)}
+</style>
 <title>Emilie Woldvik</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -13,16 +23,24 @@
 :root{
   --bg:#f3f4f2; --paper:#ffffff; --ink:#15171a; --muted:#5d6268; --line:#d8dbd8;
   --red:#c8102e; --viola:#5b2a86; --pitch:#1f6b3a;
+  --tone-om:#ffffff; --tone-karriere:#e8ebe8; --tone-drakter:#efe8f4; --tone-meritter:#16181b;
+  --on-deep:#f1f2f0; --on-deep-muted:#a2a8ad; --deep-line:#30353a; --deep-red:#ff5a6a;
   --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
   --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#101214; --paper:#181b1e; --ink:#eef0ee; --muted:#9aa1a7; --line:#2b3034;
-  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75; color-scheme:dark }}
+  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75;
+  --tone-om:#15181a; --tone-karriere:#1b1f22; --tone-drakter:#1d1724; --tone-meritter:#080909;
+  --on-deep:#eef0ee; --on-deep-muted:#9aa1a7; --deep-line:#25292d; --deep-red:#ff4d5e;
+  color-scheme:dark }}
 :root[data-theme="dark"]{
   --bg:#101214; --paper:#181b1e; --ink:#eef0ee; --muted:#9aa1a7; --line:#2b3034;
-  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75; color-scheme:dark }
+  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75;
+  --tone-om:#15181a; --tone-karriere:#1b1f22; --tone-drakter:#1d1724; --tone-meritter:#080909;
+  --on-deep:#eef0ee; --on-deep-muted:#9aa1a7; --deep-line:#25292d; --deep-red:#ff4d5e;
+  color-scheme:dark }
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
@@ -142,7 +160,7 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spac
 </header>
 
 <main>
-<section class="wrap" id="om">
+<section class="s-om" id="om"><div class="wrap">
   <div class="sec-head"><h2>Om Emilie</h2><span class="label">Spillerprofil</span></div>
   <div class="about">
     <div>
@@ -165,9 +183,9 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spac
       <p>I januar 2025 tok hun steget ut i Europa med svenske FC Rosengård, før Fiorentina hentet henne til Italia samme høst. Hun er en offensiv back som bidrar framover, og har vært en del av A-landslaget siden debuten i 2020. Sommeren 2025 var hun med i troppen til EM i Sveits.</p>
     </div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap" id="karriere">
+<section class="s-karriere" id="karriere"><div class="wrap">
   <div class="sec-head"><h2>Karriere</h2><span class="label">Klubber · Kamper / mål</span></div>
   <div class="career">
     <article class="club c-fio">
@@ -199,9 +217,9 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spac
       <p>Hverdagen er nå på Fiorentinas treningsanlegg i Toscana, med Kløfta, Lillestrøm og Malmö i bagasjen.</p>
     </div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap" id="drakter">
+<section class="s-drakter" id="drakter"><div class="wrap">
   <div class="sec-head"><h2>To drakter</h2><span class="label">Rødt og fiolett</span></div>
   <div class="chapters">
     <article class="chapter ch-nor">
@@ -228,9 +246,9 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spac
     <div><span class="label">J19 · 2018</span><b>5 kamper</b></div>
     <div><span class="label">U23 · 2019–24</span><b>22 kamper</b></div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap" id="meritter">
+<section class="s-meritter" id="meritter"><div class="wrap">
   <div class="sec-head"><h2>Meritter</h2><span class="label">Titler og utmerkelser</span></div>
   <div class="honours">
     <div class="honour"><b>3</b><span>Seriegull i Toppserien</span><small>2017 · 2018 · 2019</small></div>
@@ -238,7 +256,7 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spac
     <div class="honour"><b>1</b><span>EM-tropp med Norge</span><small>Sveits 2025</small></div>
     <div class="honour"><b>2</b><span>Årets lag i Toppserien</span><small>2019 · 2020</small></div>
   </div>
-</section>
+</div></section>
 </main>
 
 <footer>
