@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Emilie Woldvik, norsk fotballspiller. Høyreback for ACF Fiorentina og Norge.">
+<style>body{margin:0}img{max-width:100%}
+/* Section bands: each chapter of the page sits on its own tone */
+.s-om{background:var(--tone-om)}
+.s-karriere{background:var(--tone-karriere)}
+.s-drakter{background:var(--tone-drakter)}
+.s-meritter{background:var(--tone-meritter);--ink:var(--on-deep);--muted:var(--on-deep-muted);--line:var(--deep-line);--red:var(--deep-red);color:var(--ink)}
+.s-meritter .honours{border-top-color:var(--ink)}
+.s-drakter .chapter,.s-drakter .intl div{background:var(--paper)}
+.s-karriere .band{padding-top:clamp(8px,2vw,16px)}
+footer{background:var(--tone-meritter);--ink:var(--on-deep);--muted:var(--on-deep-muted);--line:var(--deep-line);color:var(--ink);border-top:1px solid var(--deep-line)}
+
+/* Press section */
+.s-media{background:var(--tone-media)}
+.press-lead{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(20px,4vw,48px);align-items:end;padding-block:8px 36px;border-bottom:1px solid var(--line);text-decoration:none}
+.press-lead q{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.6vw,62px);line-height:.95;color:var(--ink);text-wrap:balance;quotes:"«" "»"}
+.press-lead q::before,.press-lead q::after{color:var(--red)}
+.press-lead div{display:flex;flex-direction:column;gap:10px;min-width:0}
+.press-lead p{margin:0;color:var(--muted)}
+.press-lead .go,.press-item .go{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.press-lead:hover q{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.press{list-style:none;margin:0;padding:0}
+.press-item a{display:grid;grid-template-columns:190px 1fr auto;gap:8px 32px;align-items:baseline;padding-block:22px;border-bottom:1px solid var(--line);text-decoration:none}
+.press-item h3{font-family:var(--body);text-transform:none;font-weight:600;font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:0}
+.press-item p{margin:6px 0 0;color:var(--muted);max-width:60ch;font-size:16px}
+.press-item a:hover h3{text-decoration:underline;text-underline-offset:4px}
+.src{display:flex;flex-direction:column;gap:2px;min-width:0}
+.src b{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;line-height:1}
+@media (max-width:820px){.press-lead{grid-template-columns:1fr}.press-item a{grid-template-columns:1fr}}
+</style>
+<title>Emilie Woldvik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a match-programme spread. Full-bleed photo hero, then the career told as two chapters (Norway red, Fiorentina viola) on a cool pitch-line neutral. */
+:root{
+  --bg:#f3f4f2; --paper:#ffffff; --ink:#15171a; --muted:#5d6268; --line:#d8dbd8;
+  --red:#c8102e; --viola:#5b2a86; --pitch:#1f6b3a;
+  --tone-om:#ffffff; --tone-karriere:#e8ebe8; --tone-drakter:#efe8f4; --tone-meritter:#16181b;
+  --on-deep:#f1f2f0; --on-deep-muted:#a2a8ad; --deep-line:#30353a; --deep-red:#ff5a6a;
+  --tone-media:#f7f4ef;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101214; --paper:#181b1e; --ink:#eef0ee; --muted:#9aa1a7; --line:#2b3034;
+  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75;
+  --tone-media:#191714;
+  --tone-om:#15181a; --tone-karriere:#1b1f22; --tone-drakter:#1d1724; --tone-meritter:#080909;
+  --on-deep:#eef0ee; --on-deep-muted:#9aa1a7; --deep-line:#25292d; --deep-red:#ff4d5e;
+  color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#101214; --paper:#181b1e; --ink:#eef0ee; --muted:#9aa1a7; --line:#2b3034;
+  --red:#ff4d5e; --viola:#b48ae0; --pitch:#4fbf75;
+  --tone-media:#191714;
+  --tone-om:#15181a; --tone-karriere:#1b1f22; --tone-drakter:#1d1724; --tone-meritter:#080909;
+  --on-deep:#eef0ee; --on-deep-muted:#9aa1a7; --deep-line:#25292d; --deep-red:#ff4d5e;
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:.92;margin:0;text-wrap:balance;text-transform:uppercase;letter-spacing:.005em}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,4vw,56px);align-items:end;padding-block:clamp(28px,5vw,64px) 0}
+.hero-text{min-width:0;padding-bottom:clamp(8px,3vw,40px);display:flex;flex-direction:column;gap:22px}
+.hero h1{font-size:clamp(64px,12vw,168px);font-weight:900}
+.hero h1 span{display:block;color:var(--red)}
+.lede{max-width:34ch;font-size:clamp(18px,1.6vw,21px);color:var(--muted);margin:0}
+.lineup{display:flex;flex-wrap:wrap;gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.lineup div{flex:1 1 120px;padding:12px 16px 12px 0;display:flex;flex-direction:column;gap:2px}
+.lineup b{font-family:var(--display);font-weight:800;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+.hero-photo{position:relative;margin:0;min-width:0}
+.hero-photo img{display:block;width:100%;aspect-ratio:1406/1380;object-fit:cover;object-position:center 20%}
+.shirt{position:absolute;right:-6px;top:-18px;font-family:var(--display);font-weight:900;font-size:clamp(90px,14vw,180px);line-height:.8;color:var(--red);mix-blend-mode:multiply;opacity:.9;pointer-events:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .shirt{mix-blend-mode:normal}}
+:root[data-theme="dark"] .shirt{mix-blend-mode:normal}
+
+/* Sections */
+section{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 32px;margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:16px}
+.sec-head h2{font-size:clamp(44px,6vw,80px);font-weight:800}
+
+/* About */
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(24px,5vw,72px)}
+.about p{margin:0 0 1em;max-width:62ch}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:0;align-content:start}
+.facts dt{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.facts dd{margin:0;font-weight:500}
+
+/* Career timeline */
+.career{display:flex;flex-direction:column}
+.club{display:grid;grid-template-columns:150px 1fr auto;gap:12px 32px;padding-block:28px;border-top:1px solid var(--line);align-items:baseline}
+.club:last-child{border-bottom:1px solid var(--line)}
+.club .yrs{font-family:var(--mono);font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.club h3{font-size:clamp(34px,4vw,52px);font-weight:800}
+.club p{margin:8px 0 0;max-width:58ch;color:var(--muted)}
+.club .stat{display:flex;gap:24px;text-align:right}
+.club .stat div{display:flex;flex-direction:column}
+.club .stat b{font-family:var(--display);font-weight:800;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.c-fio h3{color:var(--viola)} .c-ros h3{color:var(--pitch)} .c-lsk h3,.c-klofta h3{color:var(--ink)}
+.now{display:inline-block;margin-left:10px;vertical-align:middle;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--viola);padding:3px 8px;border-radius:2px}
+
+/* Two chapters */
+.chapters{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,32px)}
+.chapter{background:var(--paper);display:flex;flex-direction:column;min-width:0}
+.chapter img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.chapter .inner{padding:24px;display:flex;flex-direction:column;gap:12px;border-top:6px solid var(--c)}
+.chapter h3{font-size:40px;font-weight:800;color:var(--c)}
+.chapter p{margin:0;color:var(--muted)}
+.ch-nor{--c:var(--red)} .ch-fio{--c:var(--viola)}
+.ch-nor img{object-position:center 18%}
+
+/* Honours */
+.honours{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.honour{padding:24px 20px 24px 0;display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--line)}
+.honour b{font-family:var(--display);font-weight:900;font-size:clamp(56px,7vw,88px);line-height:.9;color:var(--red);font-variant-numeric:tabular-nums}
+.honour span{font-weight:600}
+.honour small{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* Landslag list */
+.intl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:32px}
+.intl div{background:var(--paper);padding:16px;display:flex;flex-direction:column;gap:2px}
+.intl b{font-family:var(--display);font-weight:800;font-size:26px;line-height:1}
+
+footer{border-top:1px solid var(--line);padding-block:32px 48px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr}
+  .hero-photo{order:-1}
+  .about,.chapters{grid-template-columns:1fr}
+  .honours{grid-template-columns:repeat(2,1fr)}
+  .club{grid-template-columns:1fr}
+  .club .stat{text-align:left}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1 span{animation:rise .7s .12s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{transform:translateY(18px)}to{transform:none}}
+}
+
+.kid{margin:24px 0 0;display:flex;flex-direction:column;gap:8px}
+.kid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%}
+figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.band{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(20px,4vw,48px);align-items:center;margin-top:clamp(40px,6vw,72px)}
+.band img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 30%}
+.band blockquote{margin:0;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.5vw,60px);line-height:.95;color:var(--viola);text-wrap:balance}
+.band p{margin:16px 0 0;color:var(--muted);max-width:44ch}
+@media (max-width:820px){.band{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="wrap hero">
+  <div class="hero-text">
+    <span class="label">Fotballspiller · Høyreback · Norge</span>
+    <h1>Emilie<span>Woldvik</span></h1>
+    <p class="lede">Fra Kløfta til Firenze. Tre seriegull med LSK Kvinner, kaptein i Toppserien, og nå i Serie A for Fiorentina.</p>
+    <div class="lineup">
+      <div><span class="label">Klubb</span><b>Fiorentina</b></div>
+      <div><span class="label">Drakt</span><b>#2</b></div>
+      <div><span class="label">Landslaget</span><b>#3</b></div>
+      <div><span class="label">Født</span><b>08.01.99</b></div>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <img src="bilder/norge.jpg" alt="Emilie Woldvik med ballen i rød landslagsdrakt under en kveldskamp">
+    <span class="shirt" aria-hidden="true">3</span>
+  </figure>
+</header>
+
+<main>
+<section class="s-om" id="om"><div class="wrap">
+  <div class="sec-head"><h2>Om Emilie</h2><span class="label">Spillerprofil</span></div>
+  <div class="about">
+    <div>
+    <dl class="facts">
+      <dt>Fullt navn</dt><dd>Emilie Marie Aanes Woldvik</dd>
+      <dt>Født</dt><dd>8. januar 1999</dd>
+      <dt>Posisjon</dt><dd>Høyreback / kantforsvar</dd>
+      <dt>Høyde</dt><dd>163 cm</dd>
+      <dt>Foretrukket fot</dt><dd>Høyre</dd>
+      <dt>Moderklubb</dt><dd>Kløfta IL</dd>
+      <dt>Klubb nå</dt><dd>ACF Fiorentina, Serie A Femminile</dd>
+    </dl>
+    <figure class="kid">
+      <img src="bilder/klofta.jpg" alt="Emilie som liten jente i svart-hvit stripete Kløfta-drakt, med pekefingeren i været">
+      <figcaption>Der det startet: Kløfta IL, svart og hvitt</figcaption>
+    </figure>
+    </div>
+    <div>
+      <p>Emilie startet med fotball på Kløfta og gikk videre til akademiet i LSK Kvinner i 2015. To år senere fikk hun A-lagsdebuten mot Klepp, og hun ble værende på Lillestrøm i åtte sesonger. Der vant hun tre seriegull på rad, ble kåret til årets lag i Toppserien to ganger, og bar kapteinsbindet fra 2022.</p>
+      <p>I januar 2025 tok hun steget ut i Europa med svenske FC Rosengård, før Fiorentina hentet henne til Italia samme høst. Hun er en offensiv back som bidrar framover, og har vært en del av A-landslaget siden debuten i 2020. Sommeren 2025 spilte hun to kamper for Norge i EM i Sveits.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="s-karriere" id="karriere"><div class="wrap">
+  <div class="sec-head"><h2>Karriere</h2><span class="label">Klubber · Kamper / mål</span></div>
+  <div class="career">
+    <article class="club c-fio">
+      <span class="yrs">2025 →</span>
+      <div><h3>ACF Fiorentina <span class="now">Nå</span></h3><p>Serie A Femminile. Hentet til Firenze i august 2025, spiller med nummer 2.</p></div>
+      <div class="stat"><div><b>8</b><span class="label">Kamper</span></div><div><b>1</b><span class="label">Mål</span></div></div>
+    </article>
+    <article class="club c-ros">
+      <span class="yrs">2025</span>
+      <div><h3>FC Rosengård</h3><p>Damallsvenskan. Signerte for de regjerende svenske mesterne i januar 2025.</p></div>
+      <div class="stat"><div><b>12</b><span class="label">Kamper</span></div><div><b>3</b><span class="label">Mål</span></div></div>
+    </article>
+    <article class="club c-lsk">
+      <span class="yrs">2017 – 2024</span>
+      <div><h3>LSK Kvinner</h3><p>Toppserien. Debut 17. april 2017 i 7–1 mot Klepp, første mål mot Røa samme høst. Kaptein fra 2022. Totalt 189 kamper og 17 mål i alle turneringer.</p></div>
+      <div class="stat"><div><b>150</b><span class="label">Seriekamper</span></div><div><b>13</b><span class="label">Mål</span></div></div>
+    </article>
+    <article class="club c-klofta">
+      <span class="yrs">2012 – 2014</span>
+      <div><h3>Kløfta IL</h3><p>Moderklubben på Romerike, før overgangen til LSK-akademiet i 2015.</p></div>
+      <div class="stat"></div>
+    </article>
+  </div>
+  <div class="band">
+    <img src="bilder/trening.jpg" alt="Emilie på trening med Fiorentina i grønn og fiolett treningsgenser">
+    <div>
+      <span class="label">Trening · Firenze</span>
+      <blockquote>Fra kunstgresset på Kløfta til Serie A</blockquote>
+      <p>Hverdagen er nå på Fiorentinas treningsanlegg i Toscana, med Kløfta, Lillestrøm og Malmö i bagasjen.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="s-drakter" id="drakter"><div class="wrap">
+  <div class="sec-head"><h2>To drakter</h2><span class="label">Rødt og fiolett</span></div>
+  <div class="chapters">
+    <article class="chapter ch-nor">
+      <img src="bilder/norge.jpg" alt="Emilie i norsk landslagsdrakt">
+      <div class="inner">
+        <span class="label">Norge · Nummer 3</span>
+        <h3>Landslaget</h3>
+        <p>A-debut 7. mars 2020 mot Tyskland i Algarve Cup. Spilte to kamper i EM 2025, etter å ha spilt for Norge på alle aldersnivåer fra J15 og oppover.</p>
+      </div>
+    </article>
+    <article class="chapter ch-fio">
+      <img src="bilder/fiorentina.jpg" alt="Emilie i Fiorentina-drakt med ballen">
+      <div class="inner">
+        <span class="label">Firenze · Nummer 2</span>
+        <h3>Fiorentina</h3>
+        <p>Første sesong i Serie A Femminile, i en av Italias mest tradisjonsrike klubber. Bidrar både bakover og med målgivende pasninger framover.</p>
+      </div>
+    </article>
+  </div>
+  <div class="intl" aria-label="Aldersbestemte landslag">
+    <div><span class="label">J15 · 2014</span><b>4 kamper</b></div>
+    <div><span class="label">J16 · 2015</span><b>2 kamper</b></div>
+    <div><span class="label">J17 · 2016</span><b>4 kamper</b></div>
+    <div><span class="label">J19 · 2018</span><b>5 kamper</b></div>
+    <div><span class="label">U23 · 2019–24</span><b>22 kamper</b></div>
+  </div>
+</div></section>
+
+<section class="s-media" id="media"><div class="wrap">
+  <div class="sec-head"><h2>I media</h2><span class="label">Utvalgte artikler</span></div>
+  <a class="press-lead" href="https://www.rb.no/emilie-25-hylles-etter-jubileumskampen-hun-er-den-mest-profesjonelle-spilleren-jeg-har-trent-uansett-kjonn/s/5-43-2356466" target="_blank" rel="noopener">
+    <q>Hun er den mest profesjonelle spilleren jeg har trent, uansett kjønn</q>
+    <div>
+      <span class="label">Romerikes Blad · 2024</span>
+      <p>Emilie hylles av treneren sin etter jubileumskampen for LSK Kvinner.</p>
+      <span class="go">Les saken ↗</span>
+    </div>
+  </a>
+  <ul class="press">
+    <li class="press-item"><a href="https://www.vg.no/sport/i/0V11jG/landslagsspiller-klar-for-fiorentina" target="_blank" rel="noopener">
+      <span class="src"><b>VG</b><span class="label">2. august 2025</span></span>
+      <div><h3>Landslagsspiller klar for Fiorentina</h3><p>Fiorentina bekrefter overgangen fra FC Rosengård, rett etter to kamper for Norge i EM.</p></div>
+      <span class="go">Les ↗</span></a></li>
+    <li class="press-item"><a href="https://www.fvn.no/sport/n/bmVQ1A/aftonbladet-emilie-woldvik-paa-vei-til-fiorentina" target="_blank" rel="noopener">
+      <span class="src"><b>Fædrelandsvennen</b><span class="label">26. juli 2025</span></span>
+      <div><h3>Aftonbladet: Emilie Woldvik på vei til Fiorentina</h3><p>Etter et halvt år i Malmö går turen videre til Firenze, selv om Rosengård ønsket å beholde henne.</p></div>
+      <span class="go">Les ↗</span></a></li>
+    <li class="press-item"><a href="https://www.folkebladet.no/lokalsport/n/PpeOnR/lsk-kvinner-kaptein-woldvik-gir-seg-i-klubben" target="_blank" rel="noopener">
+      <span class="src"><b>Folkebladet</b><span class="label">18. desember 2024</span></span>
+      <div><h3>LSK Kvinner-kaptein Woldvik gir seg i klubben</h3><p>Kapteinen forlater LSK Kvinner etter ti år i klubben.</p></div>
+      <span class="go">Les ↗</span></a></li>
+    <li class="press-item"><a href="https://www.nettavisen.no/sport/emilie-25-kombinerer-to-fulltidsjobber-jeg-har-livet-mitt-i-et-excel-ark/f/5-95-1614050" target="_blank" rel="noopener">
+      <span class="src"><b>Nettavisen</b><span class="label">2024</span></span>
+      <div><h3>Emilie (25) kombinerer to fulltidsjobber: «Jeg har livet mitt i et Excel-ark»</h3><p>Om hvordan hun fikk toppfotball og en full jobb ved siden av til å gå opp.</p></div>
+      <span class="go">Les ↗</span></a></li>
+  </ul>
+</div></section>
+<section class="s-meritter" id="meritter"><div class="wrap">
+  <div class="sec-head"><h2>Meritter</h2><span class="label">Titler og utmerkelser</span></div>
+  <div class="honours">
+    <div class="honour"><b>3</b><span>Seriegull i Toppserien</span><small>2017 · 2018 · 2019</small></div>
+    <div class="honour"><b>1</b><span>NM-gull</span><small>2018 · 4–0 mot Sandviken</small></div>
+    <div class="honour"><b>2</b><span>EM-kamper for Norge</span><small>Sveits 2025</small></div>
+    <div class="honour"><b>2</b><span>Årets lag i Toppserien</span><small>2019 · 2020</small></div>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="label">Emilie Woldvik · Høyreback · ACF Fiorentina</span>
+    <span class="label">Statistikk per 2025</span>
+  </div>
+</footer>
+
+</body>
+</html>
